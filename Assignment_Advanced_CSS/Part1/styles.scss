@@ -1,0 +1,61 @@
+$Color: white;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  height: 500px;
+  width: 400px;
+  border: 2px solid $Color;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px #888888;
+  background-color: $Color;
+  margin: 80px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  .text {
+    margin: 4px;
+    padding: 35px;
+    text-align: left;
+    line-height: 2;
+    font-size: larger;
+    color: #5c5b5b;
+  }
+  .footer {
+    background-color: #686de0;
+    height: 150px;
+    border-radius: 8px;
+  }
+  .name {
+    text-transform: uppercase;
+    color: $Color;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-top: 60px;
+  }
+  .website {
+    color: $Color;
+    opacity: 0.5;
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .woman {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid $Color;
+    position: absolute;
+    transform: translateX(-50px) translateY(-50px);
+  }
+}

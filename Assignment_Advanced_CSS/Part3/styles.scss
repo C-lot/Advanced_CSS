@@ -1,0 +1,89 @@
+$color: white;
+$padding: 10px;
+
+@mixin icons {
+  color: $color;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  padding: $padding;
+  visibility: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    visibility: hidden;
+    padding: $padding;
+    padding-bottom: 8px;
+    padding-left: 0;
+    width: 30px;
+    height: 36px;
+    &:hover {
+      width: 250px;
+      transition: width 600ms ease-out;
+      visibility: visible;
+    }
+  }
+  li a {
+    padding: $padding;
+    color: $color;
+  }
+}
+
+.wrapper {
+  display: grid;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 300px;
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+  &::before {
+    content: "\f5fc";
+    background-color: #e17b77;
+    color: $color;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: $padding;
+    visibility: visible;
+  }
+}
+.fa-twitter {
+  background-color: #00aced;
+  &::before {
+    content: "\f099";
+    background-color: #00aced;
+    @include icons;
+  }
+}
+.fa-linkedin-in {
+  background-color: #007bb6;
+  &::before {
+    content: "\f0e1";
+    background-color: #007bb6;
+    @include icons;
+  }
+}
+.fa-facebook-f {
+  background-color: #3b5998;
+  &::before {
+    content: "\f39e";
+    background-color: #3b5998;
+    @include icons;
+  }
+}
+.fa-github {
+  background-color: #333;
+  &::before {
+    content: "\f09b";
+    background-color: #333;
+    @include icons;
+  }
+}

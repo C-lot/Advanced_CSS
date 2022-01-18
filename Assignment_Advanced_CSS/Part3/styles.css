@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  visibility: hidden;
+  padding: 10px;
+  padding-bottom: 8px;
+  padding-left: 0;
+  width: 30px;
+  height: 36px;
+}
+
+ul li:hover {
+  width: 250px;
+  -webkit-transition: width 600ms ease-out;
+  transition: width 600ms ease-out;
+  visibility: visible;
+}
+
+ul li a {
+  padding: 10px;
+  color: white;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 300px;
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+}
+
+.fa-laptop-code::before {
+  content: "\f5fc";
+  background-color: #e17b77;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding: 10px;
+  visibility: visible;
+}
+
+.fa-twitter {
+  background-color: #00aced;
+}
+
+.fa-twitter::before {
+  content: "\f099";
+  background-color: #00aced;
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  padding: 10px;
+  visibility: visible;
+}
+
+.fa-linkedin-in {
+  background-color: #007bb6;
+}
+
+.fa-linkedin-in::before {
+  content: "\f0e1";
+  background-color: #007bb6;
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  padding: 10px;
+  visibility: visible;
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+}
+
+.fa-facebook-f::before {
+  content: "\f39e";
+  background-color: #3b5998;
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  padding: 10px;
+  visibility: visible;
+}
+
+.fa-github {
+  background-color: #333;
+}
+
+.fa-github::before {
+  content: "\f09b";
+  background-color: #333;
+  color: white;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  padding: 10px;
+  visibility: visible;
+}
+/*# sourceMappingURL=styles.css.map */
